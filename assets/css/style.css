@@ -387,43 +387,56 @@ footer a {
   }
 }
 
-    @media screen and (max-width: 498px) {
-      header {
-        position: fixed;
-        top: 13px;
-        width: 94%;
-        z-index: 10;
-      }
-    
-      body {
-        padding-top: 280px;
-      }
-    
-      body > main > article > img {
-        display: none;
-      }
-    
-      body > main > article > img + p::before {
-        content: url(../img/badge.png);
-      }
-    
-      body > main > article > section {
-        position: relative;
-      }
-    
-      body > main > article > section > h2 {
-        position: absolute;
-        padding-inline: 6px;
-        top: -21px;
-        width: 12rem;
-        font-size: 27px;
-      }
-    
-      body > main > article > section > p {
-        padding-block: 8%;
-      }
-    
-      body > main > article > section > form {
-        padding-block: 5%;
-      }
-    }
+@media screen and (max-width: 498px) {
+  header {
+    position: fixed;
+    top: 13px;
+    width: 94%;
+    z-index: 10;
+  }
+
+  body {
+    padding-top: 280px;
+  }
+
+  body > main > article > div {
+    position: relative;
+  }
+
+  body > main > article > div > svg {
+    position: absolute;
+    top: 91%;
+  }
+
+  body > main > article > div > svg > path {
+    fill: hsl(246, 66%, 66%);
+  }
+
+  body > main > article > img {
+    display: none;
+  }
+
+  body > main > article > img + p::before {
+    content: url(../img/badge.png);
+  }
+
+  body > main > article > section {
+    position: relative;
+  }
+
+  body > main > article > section > h2 {
+    position: absolute;
+    padding-inline: 6px;
+    top: -21px;
+    width: 12rem;
+    font-size: 27px;
+  }
+
+  body > main > article > section > p {
+    padding-block: 8%;
+  }
+
+  body > main > article > section > form {
+    padding-block: 5%;
+  }
+}
