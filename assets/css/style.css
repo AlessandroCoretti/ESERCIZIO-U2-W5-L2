@@ -387,7 +387,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 498px) {
+@media screen and (max-width: 1400px) {
   header {
     position: fixed;
     top: 13px;
@@ -399,25 +399,28 @@ footer a {
     padding-top: 280px;
   }
 
-  body > main > article > div {
+  body > main > article > div > h1 {
+    z-index: 5;
+  }
+
+  body > main > article > div > h1 > span {
     position: relative;
   }
 
-  body > main > article > div > svg {
+  body > main > article > div > h1 > span > svg {
     position: absolute;
-    top: 91%;
+    width: 100%;
+    top: 80%;
+    z-index: 1;
   }
 
-  body > main > article > div > svg > path {
-    fill: hsl(246, 66%, 66%);
+  body > main > article > div > h1 > span > svg > path {
+    fill: hsla(246, 66%, 66%, 0.568);
   }
 
   body > main > article > img {
-    display: none;
-  }
-
-  body > main > article > img + p::before {
-    content: url(../img/badge.png);
+    display: block;
+    float: left;
   }
 
   body > main > article > section {
